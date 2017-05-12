@@ -27,10 +27,7 @@ public void launch(){
 	List<WebElement> a2=driver.findElements(By.tagName("a"));
 	for(WebElement a3:a2){
 		String a4=a3.getAttribute("href");
-		a1.add(a4);		
-		if(a4!=" "){
-			a3.click();
-		}
+		System.out.println(a4);
 	}
 	
 }
